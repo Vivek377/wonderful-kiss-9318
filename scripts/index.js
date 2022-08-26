@@ -37,6 +37,7 @@ function renderDOM(data) {
 
 renderDOM(dataArr)
 
+
 function Func(ele) {
 	localStorage.setItem("details", JSON.stringify(ele))
 	window.location.href = "./detailed.html"

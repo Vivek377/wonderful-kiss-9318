@@ -12,7 +12,7 @@ body {
   height: 8rem;
   display: flex;
   align-items: center;
-  /* position: relative; */
+  /* position: fixed; */
 }
 
 #logo>div:nth-child(1)>img {
@@ -35,9 +35,9 @@ img {
 #nav {
   height: 3.5rem;
   background-color: #0087a8;
-  /* position: ; */
+  position: sticky;
   display: flex;
-  width: 100%;
+  width: 100vw;
   align-items: center;
 }
 
@@ -55,10 +55,14 @@ img {
   width: 17rem;
   display: flex;
   font-weight: 900;
-  color: white;
   margin-left: 2rem;
   justify-content: space-between;
   align-items: center;
+}
+
+a{
+  text-decoration: none;
+  color:white;
 }
 
 #search {
@@ -85,6 +89,14 @@ input::placeholder {
   display: none;
 }
 
+#open{
+  color: white;
+  font-size:x-large;
+  border-right: 1px solid white;
+  padding: .3em .5em;
+  height: 70%;
+}
+
 #slider>div:nth-child(1) {
   padding: 3rem;
 }
@@ -97,6 +109,7 @@ input::placeholder {
 
 #sPages {
   color: white;
+  text-decoration: none;
   padding: 2rem;
 }
 
@@ -113,57 +126,88 @@ input::placeholder {
   transition: .4s;
 }
 
-#container{
+#container {
   width: 90%;
   margin: auto;
   margin-top: 2rem;
+  /* position: relative; */
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  /* grid-area: 1/1/2/2; */
+  grid-template-columns: repeat(3, 1fr);
   gap: 3em;
 }
 
-#container>div:nth-child(2){
-  grid-area: 1/2/2/3;
-}
-
-#container>div:nth-child(3){
-  grid-area: 2/2/3/3;
-}
-
-#bottom1{
-  background-color: #0087a8 ;
+#bottom1 {
+  background-color: #0087a8;;
   height: 20rem;
   display: flex;
-  font-weight: bolder;
+  font-weight: lighter;
   margin-top: 3rem;
 }
 
-#bottom1>div{
+#bottom1>div {
   margin-left: 4rem;
   margin-top: 2rem;
   color: white;
 }
 
-#bottom2{
+#bottom2 {
   display: flex;
-  font-weight: bolder;
+  font-weight: bold;
+  width: 97%;
   margin-top: 1rem;
+  line-height: 1.6rem;
 }
 
-#bottom2>div{
+.btop{
+  border-top: 1px solid #858383;
+  margin-top: .5em;
+  padding-top: .5em;
+}
+
+.btop>p:hover{
+  text-decoration: underline;
+}
+
+.bTop{
+  border-top: 1px solid white;
+  margin-top: .5em;
+  padding-top: .5em;
+}
+
+.bTop>p:hover{
+  text-decoration: underline;
+}
+
+#bottom2 p{
+  font-weight: 100;
+}
+
+#bottom2>div {
   margin-left: 4rem;
 }
 
-#bottom3{
-  background-color: #0087a8 ;
+#bottom3 {
+  background-color: #0087a8;
   height: 2rem;
   margin-top: 3rem;
   display: flex;
+  justify-content: space-between;
   color: white;
 }
 
-#bottom3>div{
+#bottom3>div {
   margin: .5em;
   margin-left: 4rem;
+}
+
+#bottom3>div:nth-child(2) {
+  margin: .5em;
+  margin-right: 3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 7rem;
+}
+
+#ad2{
+  margin-top: 2em;
 }

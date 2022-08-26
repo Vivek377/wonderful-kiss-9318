@@ -1,15 +1,26 @@
-let parent=document.getElementById("parent")
-let detailed=JSON.parse(localStorage.getItem("details"))
+let parent = document.getElementById("parent")
+let open = document.getElementById("open")
+let close = document.getElementById("remove")
+let slider = document.getElementById("slider")
+let detailed = JSON.parse(localStorage.getItem("details"))
 
-function renderDOM(detailed){
-    let div=document.createElement("div")
-    let img=document.createElement("img")
-    let heading=document.createElement("h1")
-    let para=document.createElement("p")
-    
-    img.src=detailed.img
-    heading.innerText=detailed.heading
-    para.innerText=`Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus tempora distinctio incidunt enim sequi quaerat delectus dolore, dicta eligendi, animi ad quibusdam maiores ex nulla soluta architecto at, aliquam ab
+open.addEventListener("click", function () {
+	slider.style.display = "block"
+})
+
+close.addEventListener("click", function () {
+	slider.style.display = "none"
+})
+
+function renderDOM(detailed) {
+    let div = document.createElement("div")
+    let img = document.createElement("img")
+    let heading = document.createElement("h1")
+    let para = document.createElement("p")
+
+    img.src = detailed.img
+    heading.innerText = detailed.heading
+    para.innerText = `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus tempora distinctio incidunt enim sequi quaerat delectus dolore, dicta eligendi, animi ad quibusdam maiores ex nulla soluta architecto at, aliquam ab
     Id magni dolorum dolorem sint molestiae adipisci inventore deleniti laboriosam error qui veniam, earum eveniet dicta obcaecati, vero eaque quae alias velit aperiam voluptatibus quidem eius. Ratione sapiente qui repudiandae?
     Sit cum ea possimus optio tempora animi nulla, sed, incidunt adipisci iste maiores, ad repellendus? Quasi, mollitia id. Vitae, quisquam distinctio! Explicabo molestiae sed ipsam dolore eos fugit ipsa soluta?
     Nihil cupiditate possimus provident ipsam, vero asperiores consectetur, excepturi temporibus id maiores qui quos corrupti aperiam dolore repellat pariatur iusto optio. Amet, repellat. In, neque. Totam fugiat temporibus explicabo animi.
@@ -20,7 +31,14 @@ function renderDOM(detailed){
     Dolorum vel nemo, sed odio eveniet magni, perspiciatis saepe odit optio officia fuga, praesentium dicta doloribus facilis rem deleniti nobis minus ipsa accusantium? Laborum est nihil tempore explicabo voluptates repudiandae!
     Delectus eius, error dignissimos perspiciatis explicabo corporis cumque hic rerum quibusdam adipisci ratione, quo facere odio incidunt exercitationem perferendis repudiandae. Doloribus porro odio velit pariatur, fuga sequi reprehenderit officiis ipsa?`
 
-    div.append(img,heading,para)
+    para.style.fontSize="1rem"
+    para.style.marginTop="2rem"
+    para.style.fontWeight="100"
+    img.style.marginTop="2rem"
+    img.style.width="50%"
+    // heading.style.fontWeight="100"
+
+    div.append(heading, img, para)
     parent.append(div)
 }
 

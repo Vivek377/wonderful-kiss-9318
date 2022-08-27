@@ -1,18 +1,21 @@
 let parent = document.getElementById("parent")
+let de = document.getElementById("de")
+let mr = document.getElementById("mp")
 let open = document.getElementById("open")
 let close = document.getElementById("remove")
 let slider = document.getElementById("slider")
 let detailed = JSON.parse(localStorage.getItem("details"))
 
 open.addEventListener("click", function () {
-	slider.style.display = "block"
+    slider.style.display = "block"
 })
 
 close.addEventListener("click", function () {
-	slider.style.display = "none"
+    slider.style.display = "none"
 })
 
 function renderDOM(detailed) {
+
     let div = document.createElement("div")
     let img = document.createElement("img")
     let heading = document.createElement("h1")
@@ -31,15 +34,42 @@ function renderDOM(detailed) {
     Dolorum vel nemo, sed odio eveniet magni, perspiciatis saepe odit optio officia fuga, praesentium dicta doloribus facilis rem deleniti nobis minus ipsa accusantium? Laborum est nihil tempore explicabo voluptates repudiandae!
     Delectus eius, error dignissimos perspiciatis explicabo corporis cumque hic rerum quibusdam adipisci ratione, quo facere odio incidunt exercitationem perferendis repudiandae. Doloribus porro odio velit pariatur, fuga sequi reprehenderit officiis ipsa?`
 
-    para.style.fontSize="1rem"
-    para.style.marginTop="2rem"
-    para.style.fontWeight="100"
-    img.style.marginTop="2rem"
-    img.style.width="50%"
-    // heading.style.fontWeight="100"
+    para.style.fontSize = "1rem"
+    para.style.marginTop = "2rem"
+    para.style.fontWeight = "100"
+    img.style.marginTop = "2rem"
+    img.style.width = "90%"
 
     div.append(heading, img, para)
-    parent.append(div)
+    de.append(div)
 }
 
+function display(data) {
+    data.forEach(function (ele) {
+        let big = document.createElement("div")
+        let img = document.createElement("img")
+        let heading = document.createElement("h4")
+
+        img.src = ele.img
+        heading.innerText = ele.heading
+
+        img.addEventListener("click",function(){
+            Func(ele)
+        })
+
+        big.style.backgroundColor = "#f6f6f6"
+        heading.style.marginLeft = "1em"
+        console.log(mr);
+
+        big.append(img, heading)
+        mr.append(big)
+    })
+}
+
+function Func(ele){
+    localStorage.setItem("details", JSON.stringify(ele))
+	window.location.href = "./detailed.html"
+}
+
+display(morePicks)
 renderDOM(detailed)

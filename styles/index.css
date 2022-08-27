@@ -60,9 +60,9 @@ img {
   align-items: center;
 }
 
-a{
+a {
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
 #search {
@@ -89,12 +89,13 @@ input::placeholder {
   display: none;
 }
 
-#open{
+#open {
   color: white;
-  font-size:x-large;
+  font-size: x-large;
   border-right: 1px solid white;
   padding: .3em .5em;
   height: 70%;
+  cursor: pointer;
 }
 
 #slider>div:nth-child(1) {
@@ -123,7 +124,7 @@ input::placeholder {
 
 #sPages h4 {
   cursor: pointer;
-  transition: .4s;
+  transition: .1s;
 }
 
 #container {
@@ -136,8 +137,40 @@ input::placeholder {
   gap: 3em;
 }
 
+#container div{
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
+#container img{
+  cursor: pointer;
+}
+
+#container>div:nth-child(1){
+  grid-area: 1/1/2/3;
+}
+
+#container>div:nth-child(2){
+  margin-bottom: 15rem;
+}
+
+#container>div:nth-child(8){
+  grid-area: 3/2/4/4;
+}
+
+#container>div:nth-child(6){
+  margin-bottom: 15rem;
+}
+
+#container>div:nth-child(17){
+  grid-area: 7/1/8/3;
+}
+
+#container>div:nth-child(18){
+  margin-bottom: 15rem;
+}
+
 #bottom1 {
-  background-color: #0087a8;;
+  background-color: #0087a8;
   height: 20rem;
   display: flex;
   font-weight: lighter;
@@ -158,27 +191,29 @@ input::placeholder {
   line-height: 1.6rem;
 }
 
-.btop{
+.btop {
   border-top: 1px solid #858383;
   margin-top: .5em;
   padding-top: .5em;
 }
 
-.btop>p:hover{
+.btop>p:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
-.bTop{
+.bTop {
   border-top: 1px solid white;
   margin-top: .5em;
   padding-top: .5em;
 }
 
-.bTop>p:hover{
+.bTop>p:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
-#bottom2 p{
+#bottom2 p {
   font-weight: 100;
 }
 
@@ -208,6 +243,6 @@ input::placeholder {
   width: 7rem;
 }
 
-#ad2{
+#ad2 {
   margin-top: 2em;
 }

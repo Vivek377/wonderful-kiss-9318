@@ -1,18 +1,33 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
 }
 
-#parent{
+#parent {
     width: 93%;
     margin: auto;
     margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
     line-height: 1.8rem;
     text-align: justify;
+}
+
+#de {
+    grid-area: 1/1/2/3;
+}
+
+#mp {
+    margin-top: 20rem;
+}
+
+#mp>div {
+    margin-top: 2rem;
 }

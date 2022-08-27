@@ -11,7 +11,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/febfb20ed7.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/febfb20ed7.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="./styles/index.css">
 </head>
 
@@ -52,10 +52,18 @@
 			<i class="fa-solid fa-xmark" id="remove"></i>
 		</div>
 		<div id="sPages">
-			<div><a href="./index.html"><h4>Home</h4></a></div>
-			<div><a href="./national.html"><h4>National</h4></a></div>
-			<div><a href="./sports.html"><h4>Sports</h4></a></div>
-			<div><a href="./business.html"><h4>Business</h4></a></div>
+			<div><a href="./index.html">
+					<h4>Home</h4>
+				</a></div>
+			<div><a href="./national.html">
+					<h4>National</h4>
+				</a></div>
+			<div><a href="./sports.html">
+					<h4>Sports</h4>
+				</a></div>
+			<div><a href="./business.html">
+					<h4>Business</h4>
+				</a></div>
 		</div>
 	</div>
 	</div>
@@ -139,7 +147,9 @@
 		</div>
 	</div>
 	<div id="bottom3">
-		<div><p>© 2022 The Printers (Mysore) Private Ltd.</p></div>
+		<div>
+			<p>© 2022 The Printers (Mysore) Private Ltd.</p>
+		</div>
 		<div>
 			<i class="fa-brands fa-facebook"></i>
 			<i class="fa-brands fa-twitter"></i>
@@ -153,39 +163,109 @@
 <script>
 	let dataArr = [
 		{
-			img: "https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/08/22/mclaren-1138278-1661168303.jpg?itok=dJ1qFVa2",
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/08/27/rupee-istock-2-1139829-1661590073.jpg?itok=zvtzxEIR",
 			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-			category: "National",
+			category: "finance",
 		},
 		{
-			img: "https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/08/18/maruti-suzuki-reuters-1137155-1660813665.jpg?itok=2OflqgmQ",
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/08/27/wall-street-afp-1139762-1661546318.png?itok=8Hn02TAQ",
 			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-			category: "Business",
+			category: "stock",
 		},
 		{
-			img: "https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/07/27/file722qabirfi8jdbhh29i-1130710-1658940427.jpg?itok=kCTw_IAg",
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/08/26/file7m8fc0z57xslla6cefh-1-1134893-1660142950-1139609-1661522106.jpg?itok=MNdF2MU9",
 			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-			category: "sports"
+			category: "stock"
 		},
 		{
-			img: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/08/25/gold-istock-1136484-1660621725-1138791-1661326553-1139182-1661420656.jpg?itok=nlNR0_hq",
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/08/27/market-reuters-1138072-1661133251-1138570-1661255516-1139860-1661596229.jpg?itok=eEIZDj_y",
 			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-			category: "National"
+			category: "stock"
 		},
 		{
-			img: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/08/25/dosa-printer-1139206-1661427334.jpg?itok=UH08QMwz",
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/08/26/forex-image-istock-1139607-1661522169.jpg?itok=FiQeq_aI",
 			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-			category: "sports"
+			category: "finance"
 		},
 		{
-			img: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/08/08/funds-istokc-1134081-1659900284.jpg?itok=ih0H2SWS",
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/08/08/funds-istokc-1134081-1659900284.jpg?itok=4_xprRem",
 			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-			category: "Business"
+			category: "finance"
 		},
 		{
-			img: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/08/25/hyundai-reuters-1139220-1661426212.jpg?itok=Xv31Hoo5",
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/06/20/istock-1283813790-1119568-1655708827.jpg?itok=Knp0cj5i",
 			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-			category: "Business"
+			category: "finance"
+		},
+		{
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/08/26/r9i5g-cov-sho-sel-1-1139631-1661527637.jpg?itok=OpN1McLt",
+			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+			category: "tech",
+		},
+		{
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/08/26/google-logo-reuters-1139481-1661498301.jpg?itok=lmXee-mS",
+			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+			category: "tech",
+		},
+		{
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/08/26/file7m8fc0z57xslla6cefh-1-1134893-1660142950-1139609-1661522106.jpg?itok=MNdF2MU9",
+			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+			category: "stock"
+		},
+		{
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/08/26/twitter-afp-1139425-1661456700.jpg?itok=fwwRULAB",
+			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+			category: "tech"
+		},
+		{
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/08/25/802298-01-021-1108012-1652179842-1139247-1661433026.jpg?itok=JLbVmQk4",
+			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+			category: "tech"
+		},
+		{
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/08/23/audi-e-tron-afp-1138536-1661248718.jpg?itok=hAeevifO",
+			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+			category: "wheels"
+		},
+		{
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/07/21/2019-03-20t095500z17825083rc118cf2aa20rtrmadp3bmw-resultsjpg-1128738-1658398254.jpg?itok=zGawE62Z",
+			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+			category: "wheels"
+		},
+		{
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/08/27/rupee-istock-2-1139829-1661590073.jpg?itok=zvtzxEIR",
+			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+			category: "finance",
+		},
+		{
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/07/27/file722qabirfi8jdbhh29i-1130710-1658940427.jpg?itok=Vpgj8L9B",
+			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+			category: "wheels",
+		},
+		{
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/08/22/mclaren-1138278-1661168303.jpg?itok=OUdthHfA",
+			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+			category: "wheels"
+		},
+		{
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/08/27/390767315-1-1139852-1661600461.jpg?itok=oqmfdQtZ",
+			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+			category: "finance",
+		},
+		{
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/08/18/maruti-suzuki-reuters-1137155-1660813665.jpg?itok=jrFLVOVp",
+			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+			category: "wheels",
+		},
+		{
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/07/24/anubhav-srivastava-2-1129726-1658684258.jpg?itok=CtnN0p8i",
+			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+			category: "finance",
+		},
+		{
+			img: "https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2022/06/12/file6xpkl2lk11s1d9y4oh8v-1117574-1655056964.jpg?itok=OEUHcHqi",
+			heading: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+			category: "finance",
 		},
 	]
 </script>

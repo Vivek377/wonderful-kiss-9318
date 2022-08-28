@@ -53,7 +53,7 @@ function display(data) {
         img.src = ele.img
         heading.innerText = ele.heading
 
-        img.addEventListener("click",function(){
+        img.addEventListener("click", function () {
             Func(ele)
         })
 
@@ -66,9 +66,9 @@ function display(data) {
     })
 }
 
-function Func(ele){
+function Func(ele) {
     localStorage.setItem("details", JSON.stringify(ele))
-	window.location.href = "./detailed.html"
+    window.location.href = "./detailed.html"
 }
 
 display(morePicks)

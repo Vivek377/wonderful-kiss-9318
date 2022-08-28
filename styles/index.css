@@ -12,7 +12,7 @@ body {
   height: 8rem;
   display: flex;
   align-items: center;
-  /* position: fixed; */
+  position: relative;
 }
 
 #logo>div:nth-child(1)>img {
@@ -21,7 +21,7 @@ body {
 
 #logo>div:nth-child(1) {
   width: 12%;
-  margin-left: 3em;
+  margin-left: 2em;
 }
 
 #logo>div:nth-child(2) {
@@ -36,8 +36,10 @@ img {
   height: 3.5rem;
   background-color: #0087a8;
   position: sticky;
+  top: 0;
   display: flex;
   width: 100vw;
+  /* justify-content: ; */
   align-items: center;
 }
 
@@ -66,7 +68,8 @@ a {
 }
 
 #search {
-  margin-left: 25rem;
+  margin-left: 167%;
+  padding: 1rem;
   border: 3px solid white;
   height: 2.5em;
   width: 15rem;
@@ -124,11 +127,20 @@ input::placeholder {
 
 #sPages h4 {
   cursor: pointer;
-  transition: .1s;
+  transition: .3s;
+}
+
+#spec {
+  padding: .5em .5em;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  width: fit-content;
+  background-color: #0087a8;
+  color: white;
 }
 
 #container {
-  width: 90%;
+  width: 93%;
   margin: auto;
   margin-top: 2rem;
   /* position: relative; */
@@ -137,35 +149,35 @@ input::placeholder {
   gap: 3em;
 }
 
-#container div{
+#container div {
   box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
 
-#container img{
+#container img {
   cursor: pointer;
 }
 
-#container>div:nth-child(1){
+#container>div:nth-child(1) {
   grid-area: 1/1/2/3;
 }
 
-#container>div:nth-child(2){
+#container>div:nth-child(2) {
   margin-bottom: 15rem;
 }
 
-#container>div:nth-child(8){
+#container>div:nth-child(8) {
   grid-area: 3/2/4/4;
 }
 
-#container>div:nth-child(6){
+#container>div:nth-child(6) {
   margin-bottom: 15rem;
 }
 
-#container>div:nth-child(17){
+#container>div:nth-child(17) {
   grid-area: 7/1/8/3;
 }
 
-#container>div:nth-child(18){
+#container>div:nth-child(18) {
   margin-bottom: 15rem;
 }
 

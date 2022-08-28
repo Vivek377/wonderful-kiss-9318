@@ -3,6 +3,9 @@ let close = document.getElementById("remove")
 let slider = document.getElementById("slider")
 let container = document.getElementById("container")
 let search = document.getElementById("search")
+let sports = document.getElementById("sports")
+let busi = document.getElementById("business")
+let nat = document.getElementById("national")
 
 open.addEventListener("click", function () {
 	slider.style.display = "block"
